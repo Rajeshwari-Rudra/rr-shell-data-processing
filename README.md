@@ -17,6 +17,8 @@ Big data - shell data processing using Powershell and GitBash commands
 - git commit -m "initial commit" - commits the repo with message
 - git push origin branchName - pushes the changes to that specific branchName
 - cat - concatenate files and print on the standard output
+- head -10 filename.txt - displays the top 10 lines of file
+- tail -2 filename.txt - displays last 2 lines of file
 
 ## Creating a project 
 - Start a new project, Right click on folder and select "Open PowerShell window here as administrator".
