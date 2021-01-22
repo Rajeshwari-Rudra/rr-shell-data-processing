@@ -7,6 +7,7 @@ Big data - shell data processing using Powershell and GitBash commands
 - cd .. - changes to root directory
 - ni - creates new item
 - rm - removes an item
+- ls - list the items
 - ALT SPACE C -To close the window
 
 ## GitBash
@@ -15,6 +16,7 @@ Big data - shell data processing using Powershell and GitBash commands
 - git add . - adds the files
 - git commit -m "initial commit" - commits the repo with message
 - git push origin branchName - pushes the changes to that specific branchName
+- cat - concatenate files and print on the standard output
 
 ## Creating a project 
 - Start a new project, Right click on folder and select "Open PowerShell window here as administrator".
@@ -36,24 +38,24 @@ To request content from an HTTPS url,use the command:
 ## To process the text data using Bash commands
 * Transform each space ' ' into a return character '\12' (aka ASCII line feed) [2] 
 ``` 
-  tr ' ' '\12' < returnedfile
+  tr ' ' '\12' < data.txt
 ```
 * Functionally, this "flat maps" each line into individual words. 
 Pipe the output to sort (send the results of one command as input into another command)
 ```
-tr ' ' '\12' < returnedfile | sort
+tr ' ' '\12' < data.txt | sort
 ```
 * Pipe the sorted output to uniq -c to count
 ```
- tr ' ' '\12' < returnedfile | sort | uniq -c
+ tr ' ' '\12' < data.txt | sort | uniq -c
  ```
 * Pipe the reduced output to sort with -nr flag
 ```
-tr ' ' '\12' < returnedfile | sort | uniq -c | sort -nr
+tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr
 ```
 * To redirect the output to result.txt
 ```
-tr ' ' '\12' < returnedfile | sort | uniq -c | sort -nr > result.txt
+tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt
 ```
 
 ## Text files:-
