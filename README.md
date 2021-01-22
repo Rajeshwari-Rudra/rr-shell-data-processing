@@ -2,19 +2,19 @@
 Big data - shell data processing using Powershell and GitBash commands
 
 ## Powershell 
-mkdir - creates a new directory
-cd - changes the directory
-cd .. - changes to root directory
-ni - creates new item
-rm - removes an item
-ALT SPACE C -To close the window
+- mkdir - creates a new directory
+- cd - changes the directory
+- cd .. - changes to root directory
+- ni - creates new item
+- rm - removes an item
+- ALT SPACE C -To close the window
 
 ## GitBash
-git clone repoUrl - clones the cloud repo to local machine
-git add remote origin repoUrl - adds remote folders to cloud repo
-git add . - adds the files
-git commit -m "initial commit" - commits the repo with message
-git push origin branchName - pushes the changes to that specific branchName
+- git clone repoUrl - clones the cloud repo to local machine
+- git add remote origin repoUrl - adds remote folders to cloud repo
+- git add . - adds the files
+- git commit -m "initial commit" - commits the repo with message
+- git push origin branchName - pushes the changes to that specific branchName
 
 ## Creating a project 
 - Start a new project, Right click on folder and select "Open PowerShell window here as administrator".
