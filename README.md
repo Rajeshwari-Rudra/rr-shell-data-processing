@@ -12,6 +12,7 @@ Big data - shell data processing using Powershell and GitBash commands
 
 ## GitBash
 - git clone repoUrl - clones the cloud repo to local machine
+- git pull origin branchName - pulls the fresh code from repo
 - git add remote origin repoUrl - adds remote folders to cloud repo
 - git add . - adds the files
 - git commit -m "initial commit" - commits the repo with message
@@ -27,9 +28,9 @@ Big data - shell data processing using Powershell and GitBash commands
 - Make an empty new items named as "README.md" and  as ".gitignore" using command "ni README.md" and "ni .gitignore".
 - Find an interesting web page (http://shakespeare.mit.edu/julius_caesar/full.html (Links to an external site.)) and copy it.
 - Use curl to return the page text. Hint: curl "http://shakespeare.mit.edu/julius_caesar/full.html"  
-- Commands to return the next text by using curl and output to a file
-```curl "yourlongurl" -O 
-   curl "yourlongurl" -O "data.txt"
+- Commands to return the next text by using curl 
+```curl "http://shakespeare.mit.edu/julius_caesar/full.html" -O 
+   curl "http://shakespeare.mit.edu/julius_caesar/full.html" -O "data.txt"
 ```
 To request content from an HTTPS url,use the command:
 ```
